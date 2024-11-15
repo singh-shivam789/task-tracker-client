@@ -1,0 +1,120 @@
+* {
+  font-family: cursive;
+}
+
+.container {
+  border-radius: 5px;
+  border: 0.2px solid rgba(0, 0, 0, 0.438);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  width: 90%;
+}
+
+.main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: auto;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.task {
+  width: 100%;
+  color: whitesmoke;
+  background-color: rgba(110, 149, 149, 0.622);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease-in-out 0.3s;
+}
+
+.task:hover {
+  background-color: rgba(47, 79, 79, 0.796);
+}
+
+
+.text-input {
+  width: 100%;
+}
+
+.text-input,
+.add-text-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.text-input,
+.add-text-btn:hover {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+  background-color: darkslategrey;
+  color: whitesmoke;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-pop-up {
+  width: 35%;
+  height: 35%;
+  z-index: 99;
+  background-color: rgba(47, 79, 79, 0.593);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+}
+
+.edit-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: none;
+}
+
+.edit-form-input {
+  width: 50%;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+}
